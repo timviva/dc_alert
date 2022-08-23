@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "124453645290",
+    "project_id": "dc-alert",
+    "storage_bucket": "dc-alert.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124453645290:android:f60cf7d2f72fae2f0ae093",
+        "android_client_info": {
+          "package_name": "com.example.dcalert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124453645290-gvu5enfk5g53ubq6be7fdjv16g01bk5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1W611oYWcCz7V7aRVArIWZEkxnhdIABo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124453645290-gvu5enfk5g53ubq6be7fdjv16g01bk5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
