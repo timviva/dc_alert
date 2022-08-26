@@ -12,7 +12,8 @@
     <color name="teal_200">#673AB7</color>
     <color name="red">#EB2323</color>
     <color name="pink">#000000</color>
-    <color name="TextColor">#0A31F6</color>
+    <color name="TextColor">#00E1FF</color>
     <color name="Background">#FFC400</color>
+    <color name="colorPrimary">#00E1FF</color>
 
 </resources>
