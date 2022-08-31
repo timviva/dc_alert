@@ -75,7 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Enter Crime Details"
+        android:text="Enter Disaster Details"
         android:textColor="@color/red"
         android:textSize="23sp"
         android:textStyle="bold"
@@ -90,7 +90,7 @@
     <EditText
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:id="@+id/UserEmail"
+        android:id="@+id/UserEmailD"
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:background="@drawable/round_border"
@@ -112,7 +112,7 @@
     <EditText
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:id="@+id/UserFullName"
+        android:id="@+id/UserFullNameD"
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:background="@drawable/round_border"
@@ -134,16 +134,16 @@
     <EditText
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:id="@+id/CrimeDescription"
+        android:id="@+id/DisDescription"
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:background="@drawable/round_border"
         android:drawableStart="@drawable/ic_baseline_description_24"
         android:drawablePadding="16dp"
         android:ems="10"
-        android:hint="Brief Description of type of crime"
+        android:hint="Brief Description of type of Disaster"
         android:inputType="textMultiLine"
-        android:padding="16dp"
+        android:padding="12dp"
         android:textColor="@color/colorPrimary"
         android:textColorHint="@color/colorPrimary"
         android:textSize="18sp"
@@ -152,17 +152,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <EditText
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:id="@+id/CrimePlace"
+        android:id="@+id/DisPlace"
         android:layout_width="0dp"
         android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/round_border"
         android:drawableStart="@drawable/ic_baseline_map_24"
         android:drawablePadding="16dp"
         android:ems="10"
-        android:hint="Enter Place Of Crime"
+        android:hint="Enter Place Of Disaster"
         android:inputType="textMultiLine"
         android:padding="16dp"
         android:textColor="@color/colorPrimary"
@@ -170,14 +171,14 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/topView"
-        app:layout_constraintVertical_bias="0.619" />
-
+        app:layout_constraintVertical_bias="0.617" />
 
     <EditText
 
-        android:id="@+id/MedtTime"
+        android:id="@+id/MedtTimeD"
         android:layout_width="150dp"
         android:layout_height="55dp"
         android:background="@drawable/round_border"
@@ -186,7 +187,6 @@
         android:ems="10"
         android:hint="Time"
         android:inputType="date"
-
         android:padding="16dp"
         android:textColor="@color/colorPrimary"
         android:textColorHint="@color/colorPrimary"
@@ -201,7 +201,7 @@
         app:layout_constraintVertical_bias="0.76" />
 
     <EditText
-        android:id="@+id/MedtDate"
+        android:id="@+id/MedtDateD"
         android:layout_width="150dp"
         android:layout_height="57dp"
         android:background="@drawable/round_border"
@@ -226,7 +226,7 @@
         app:layout_constraintVertical_bias="0.759" />
 
     <Button
-        android:id="@+id/BtnSubmit"
+        android:id="@+id/BtnSubmitDisaster"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"

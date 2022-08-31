@@ -43,8 +43,8 @@
                     android:layout_toRightOf="@+id/MimgMenu"
                     android:paddingLeft="10dp"
                     android:text="WELCOME TO DC ALERT"
-                    android:textColor="@color/TextColor"
-                    android:textSize="25dp"
+                    android:textColor="@color/colorBottomCardStart"
+                    android:textSize="19dp"
                     android:textStyle="bold" />
 
                 <androidx.appcompat.widget.SearchView
@@ -64,23 +64,15 @@
             </RelativeLayout>
 
 
-            <GridLayout
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:alignmentMode="alignMargins"
-                android:columnCount="2"
-                android:columnOrderPreserved="true"
-                android:rowCount="3"
-
-                >
-
+                android:layout_height="wrap_content">
                 <androidx.cardview.widget.CardView
-
-
-                    android:layout_width="0dp"
+                    android:id="@+id/MtvCrimeAlert"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
+                    android:layout_weight="1"
                     android:layout_margin="12dp"
                     app:cardCornerRadius="16dp"
                     app:cardElevation="4dp">
@@ -101,14 +93,14 @@
                             android:src="@drawable/ic_baseline_submit" />
 
                         <TextView
-                            android:id="@+id/MtvCrimeAlert"
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="12dp"
                             android:fontFamily="sans-serif-black"
                             android:text="CrimeAlert"
                             android:textColor="@color/TextColor"
-                            android:textSize="20sp"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -117,11 +109,11 @@
 
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/MtvDisasterAlert"
 
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
+                    android:layout_weight="1"
                     android:layout_margin="12dp"
                     app:cardCornerRadius="16dp"
                     app:cardElevation="4dp">
@@ -141,24 +133,29 @@
                             android:src="@drawable/ic_baseline_submit" />
 
                         <TextView
-                            android:id="@+id/MtvDisasterAlert"
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="12dp"
                             android:fontFamily="sans-serif-black"
                             android:text="DisasterAlert"
                             android:textColor="@color/TextColor"
-                            android:textSize="20sp"
+                            android:textSize="12sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
                 <androidx.cardview.widget.CardView
-
-                    android:layout_width="wrap_content"
+                    android:id="@+id/MtvEmergencyCall"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
+                    android:layout_weight="1"
                     android:layout_margin="12dp"
                     app:cardCornerRadius="16dp"
                     app:cardElevation="4dp">
@@ -178,24 +175,23 @@
                             android:src="@drawable/ic_baseline_call" />
 
                         <TextView
-                            android:id="@+id/MtvEmergencyCall"
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="12dp"
                             android:fontFamily="sans-serif-black"
                             android:text="EmergencyCall"
                             android:textColor="@color/TextColor"
-                            android:textSize="20sp"
+                            android:textSize="11sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-
-                    android:layout_width="wrap_content"
+                    android:id="@+id/MtvAdmin"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
+                    android:layout_weight="1"
                     android:layout_margin="12dp"
                     app:cardCornerRadius="16dp"
                     app:cardElevation="4dp">
@@ -217,24 +213,28 @@
                             />
 
                         <TextView
-                            android:id="@+id/MtvAdmin"
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="12dp"
                             android:fontFamily="sans-serif-black"
                             android:text="Admin"
                             android:textColor="@color/TextColor"
-                            android:textSize="20sp"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
                 <androidx.cardview.widget.CardView
-
-                    android:layout_width="wrap_content"
+                    android:id="@+id/MtvAbout"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
+                    android:layout_weight="1"
                     android:layout_margin="12dp"
                     app:cardCornerRadius="16dp"
                     app:cardElevation="4dp">
@@ -255,7 +255,7 @@
                             android:src="@drawable/ic_baseline_about" />
 
                         <TextView
-                            android:id="@+id/MtvAbout"
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="12dp"
@@ -268,11 +268,10 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-
-                    android:layout_width="wrap_content"
+                    android:id="@+id/MimgExit"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
+                    android:layout_weight="1"
                     android:layout_margin="12dp"
                     app:cardCornerRadius="16dp"
                     app:cardElevation="4dp">
@@ -291,7 +290,7 @@
                             android:src="@drawable/ic_baseline_exit" />
 
                         <TextView
-                            android:id="@+id/MimgExit"
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="12dp"
@@ -302,15 +301,14 @@
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
-
-            </GridLayout>
 
             <RelativeLayout
 
 
                 android:layout_width="match_parent"
-                android:layout_height="241dp"
+                android:layout_height="276dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/bottom_card"
                 android:padding="15dp">
@@ -333,32 +331,21 @@
                     android:layout_alignParentEnd="true"
                     android:src="@drawable/ic_baseline_favorite_border_24" />
 
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_below="@+id/trending"
-                    android:layout_marginTop="4dp"
-                    android:padding="10dp"
-                    tools:srcCompat="@tools:sample/avatars" />
-
                 <TextView
-                    android:layout_width="352dp"
-                    android:layout_height="152dp"
+                    android:layout_width="275dp"
+                    android:layout_height="177dp"
                     android:layout_alignEnd="@+id/imageView2"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginTop="56dp"
-                    android:layout_marginEnd="41dp"
-                    android:layout_marginBottom="19dp"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginBottom="28dp"
                     android:text="it's our Duty as Citizens to maintain Order,Peace and Security  in the  society.This has necessitated the creation of this App"
                     android:textSize="20sp" />
 
 
             </RelativeLayout>
-
-
 
 
         </LinearLayout>

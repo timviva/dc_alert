@@ -25,16 +25,21 @@ class LoginActivity : AppCompatActivity() {
     fun login(view: View) {
         val email = editTextEmailAddress!!.text.toString()
         val password = editTextPassword!!.text.toString()
-
-        auth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-                finish()
+        if (email.isBlank() ||password.isBlank()){
+            Toast.makeText(applicationContext,"Password or Email is empty",Toast.LENGTH_SHORT).show()
+        }else{
+            auth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    val intent = Intent(this, CrimeActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                }
+            }.addOnFailureListener { exception ->
+                Toast.makeText(applicationContext, exception.localizedMessage, Toast.LENGTH_LONG).show()
             }
-        }.addOnFailureListener { exception ->
-            Toast.makeText(applicationContext, exception.localizedMessage, Toast.LENGTH_LONG).show()
         }
+
+
 
 
     }
